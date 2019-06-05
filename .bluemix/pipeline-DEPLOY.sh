@@ -57,7 +57,8 @@ kubectl delete secret mms-secret --namespace $TARGET_NAMESPACE
 kubectl --namespace $TARGET_NAMESPACE create secret generic mms-secret --from-file=mms-secrets=./mms-secrets.json
 
 ## install helm tiller into cluster
-helm init
+# helm init
+helm init --upgrade
 
 # install release named jpetstore
 helm upgrade --install --namespace $TARGET_NAMESPACE --debug \
