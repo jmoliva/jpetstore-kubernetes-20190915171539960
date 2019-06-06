@@ -16,7 +16,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: 'jpetstore-kubernetes'
-      repo_url: 'https://github.com/IBM-Cloud/jpetstore-kubernetes'
+      repo_url: 'https://github.com/jmoliva/jpetstore-1'
       type: clone
       has_issues: false
       enable_traceability: false
