@@ -1,4 +1,6 @@
 ---
+defaultBaseImageVersion: latest
+properties: []
 stages:
 - name: BUILD
   inputs:
@@ -49,6 +51,9 @@ stages:
     value: ${TWILIO_TOKEN}
   - name: TWILIO_NUMBER
     value: ${TWILIO_NUMBER}
+  - name: HELM_VERSION
+    value: 2.12.3
+    type: text
   jobs:
   - name: Deploy
     type: deployer
